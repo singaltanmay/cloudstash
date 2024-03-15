@@ -1,12 +1,10 @@
-import { UserButton } from "@clerk/nextjs";
-import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export default function Home() {
   return (
     <main className="">
       <h1>CloudStash</h1>
-
-      <UserButton />
+      <Button> Here is a demo button</Button>
     </main>
   );
 }
