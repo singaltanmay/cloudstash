@@ -2,6 +2,7 @@ import { UserButton, SignedOut, SignInButton } from '@clerk/nextjs'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import { ThemeToggler } from './ThemeToggler'
 
 function Header() {
   return (
@@ -13,6 +14,7 @@ function Header() {
         <h1 className='font-bold text-xl'>CloudStash</h1>
       </Link>
       <div className='px-5 flex space-x-2 items-center'>
+        <ThemeToggler/>
         <UserButton afterSignOutUrl='/' />
         <SignedOut>
           <SignInButton afterSignInUrl='/dashboard' mode='modal'/>
